@@ -1,0 +1,92 @@
+{
+  "main": {
+    "id": "ce93ecaa7abf22fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa64c952c37fcf05",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Investiments/The zurich axioms.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6e3240e0f8a38809",
+    "type": "split",
+    "children": [
+      {
+        "id": "fab7f6ad9a59af35",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f15559ff01502a69",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "0432825c0fd16970",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cf806b3a7b4b4a3f",
+    "type": "split",
+    "children": [
+      {
+        "id": "4c026c601c1dda07",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5ce446231ce0775c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Investiments/The zurich axioms.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "Investiments/Untitled.md",
+    "README.md"
+  ]
+}
