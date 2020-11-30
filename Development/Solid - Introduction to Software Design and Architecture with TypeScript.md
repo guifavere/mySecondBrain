@@ -47,3 +47,32 @@ Often, optimizing code for computers means making it less readable and understan
 ## Design principles
 ### Dependency Inversion Principle (DIP)
 **Source code dependency:** When the current component (class, module, etc) relies on at least one other component in order to be compiled. Source code dependencies should be limited.
+
+## Building a real-world DDD app
+**Domain model:** A domain model is a declarative layer of code (without dependencies to any upper-layer concerns) that encapsulates the business rules of a particular problem domain.
+
+**Ubiquitous language:** The Ubiquitous Language (which is a fancy DDD term for the common language that best describes the domain model concepts) is learned through conversation with domain experts.
+
+**Anemic model:** When the classes that describe the model and the classes that perform operations on the model are separate. The services contain all the domain logic while the the domain objects themselves contain practically none.
+
+**Transaction script:** The simplest way to organize domain logic as possible. By using simple if and else control statements, we can express domain logic easily. This is perfect for simple applications without a huge amount of domain logic that can do without a lot of time spent on architecture.
+
+**Entities:** Domain objects that we care to uniquely identify.
+
+**Value objects:** Value objects have no identity. They are attributes of Entities.
+
+**Aggregates:** An aggregate is a collection of entities bound together by an aggregate root. The aggregate root is the thing that we refer to for lookups. No members from within the aggregate boundary can be referred to directly from anything external to the aggregate. This is how the aggregate maintains consistency.
+
+**Domain services:** This is where we locate domain logic that doesn't belong to any one object conceptually.
+
+**Repositories:** We use repositories in order to retrieve domain objects from persistence technologies. Using software design principles like the Liskov Substitution Principle and layered architecture, we can design this in a way so that we can easily make architecture decisions to switch between an in-memory repository for testing, a MySQL implementation for today, and a MongoDB based implementation 2 years from now.
+
+**Factories:** We'll want to create domain objects in many different ways. We map to domain objects using a factory that operates on raw SQL rows, raw json, or the Active Record that's returned from your ORM.
+
+**Domain events:** Domain events are simply objects that define some sort of event that occurs in the domain that domain experts care about.
+
+The two most important architectural concepts to grasp in Domain-Driven Design are subdomains and bounded contexts. Subdomains are about creating logical boundaries and bounded contexts are about creating physical ones.
+
+**Subdomains:** A Subdomain is a smaller piece (logical boundary) within the entire problem space.
+
+**Bounded contexts:** A Bounded Context is a logical boundary around all of the subdomains needed in order for an application to achieve its goals.
