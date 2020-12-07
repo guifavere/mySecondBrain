@@ -37,4 +37,10 @@ function Toggle({ children }) {
 ```
 
 ## Exercise 3
-A better way to keep flexible the compound components, is to through: `createContext`.
+A better way to keep flexible the compound components, is through: `createContext`.
+
+## Exercise 4
+You can give rendering control to users, returning a object of props from your component, or maybe a function that override them. This make it easier to use your components and hooks the right way without requiring people to wire things up for common use cases.
+
+## Exercise 5
+We can override reducer logic  in many different contexts, and scenarios providing a custom reducer as prop.
