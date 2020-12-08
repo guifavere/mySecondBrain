@@ -1,3 +1,5 @@
+# The zurich axioms
+
 The book: **The Zurich axioms** was written in 1985 by Max Gunther, and it brings the rules of risk and reward used by generations of swiss bankers.
 
 Below are the rules, just a bit summary:
