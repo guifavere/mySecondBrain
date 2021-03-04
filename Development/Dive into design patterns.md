@@ -31,3 +31,12 @@ They define how build objects in bigger structures, also keep them flexible and 
 
 ### Behavioral
 They are patterns that are responsible by an efficient communication, and definition of responsibilities between objects.
+
+## Rules for projects
+
+### Encapsulate what varies
+This minimize the risks. You can encapsulate in methods, or classes.
+
+### Develop for interfaces not implementations
+
+### Choose composition over inheritance
